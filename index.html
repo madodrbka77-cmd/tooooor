@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Tourloop - منصة تواصل اجتماعي عصرية" />
+    <meta name="theme-color" content="#065F46" />
+    <title>Tourloop | تورلوب</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: { extend: {
+          fontFamily: { sans: ['Cairo', 'sans-serif'] },
+          colors: { fb: { blue: '#065F46', gray: '#F0F2F5', dark: '#242526', hover: '#F2F2F2', text: '#050505', textGray: '#65676B' } }
+        } }
+      }
+    </script>
+    <style>
+      body { font-family: 'Cairo', sans-serif; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+  </head>
+  <body class="bg-fb-gray dark:bg-fb-dark text-fb-text dark:text-white transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
